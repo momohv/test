@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  href="首页.html"  rel="stylesheet"  type="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .body{
+
+            width: 100%;
+            height: 100%;
+
+        }
+        #header{
+            width: 100%;
+            height: 5%;
+            background: #c82519;
+            display: flex;
+
+
+        }
+        #header .div1{
+            width:77%;
+            height: 60%;
+            border:white 1px solid;
+            background: white;
+            border-radius: 25px;
+            margin-top: 1px;
+            display: flex;
+
+
+        }
+        #header .div2{
+            width: 15%;
+            height: 80%;
+            display: flex;
+
+            margin-top: 3px;
+        }
+        #header .div3{
+            width: 5%;
+            height: 80%;
+            display: flex;
+
+            margin: 7px;
+
+        }
+
+        #header .writing1{
+
+            font-size: 22px;
+            color: #c82519;
+
+
+        }
+        #header .writing2{
+
+            margin: auto;
+
+        }
+        #header .input1{
+
+            width: 200px;
+            height:27px;
+            float: bottom;
+            border: none;
+
+        }
+
+        /*上部导航栏*/
+
+        #imgs{
+
+            width: 374px;
+            height: 150px;
+            border: solid 1px #000000;
+            margin: auto;
+            position: relative;
+        }
+        #imgs .img{
+
+            width: 374px;
+            height: 150px;
+            background-image: url("../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/1.jpg");
+            background-size: 374px 150px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        /*图片*/
+
+        #classification{
+            width: 374px;
+            height: 150px;
+
+            display: flex;
+            justify-content: space-between;
+            /*justify-content: space-around;*/
+            flex-wrap:wrap ;
+            align-content: space-between;
+
+        }
+        #classification .div5{
+
+            width: 19%;
+            height: 45%;
+
+            text-align: center
+        ;
+
+
+
+
+        }
+        #classification .img1{
+
+
+            width: 50%;
+            height: 50%;
+            margin-left:15%;
+            margin-top: 10%;
+            margin-right: 10%;
+
+
+        }
+        #classification .writing3{
+
+            color: #666666;
+            font-size: 15px;
+        }
+
+
+        /*分类*/
+
+        #seckill{
+
+
+            width: 374px;
+            height: 20px;
+
+            display: flex;
+
+
+        }
+
+        #seckill .div6{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            text-align: center;
+
+        }
+        #seckill .div7{
+
+            width: 20%;
+            height: 90%;
+            border:  solid 1px #f92e0f;
+            border-radius:25px;
+            position: relative;
+            left: 9px;
+            text-align: center;
+            margin-top: 1px;
+            background: #f92e0f;
+            color: white;
+
+
+
+
+        }
+        #seckill .writing4{
+
+            color: #743374;
+        }
+        .seckill1 .writing5{
+
+
+            color: white;
+            font-size: 12px;
+
+        }
+        #seckill .div8{
+            width: 20%;
+            height: 90%;
+            border:  solid 1px red;
+            border-radius:0 25px  25px 0;
+
+
+
+            text-align: center;
+            margin-top: 1px;
+
+        }
+        #seckill .div9{
+
+            margin-left:60px;
+
+            color: #db1224;
+        }
+        .div10{
+            width: 374px;
+            height: 150px;
+
+        }
+        .div11{
+            width: 25%;
+            height: 95%;
+            float: left;
+            font-size: 12px;
+            text-align: center;
+        }
+        .img2{
+            width: 60%;
+            height: 60%;
+
+        }
+        .writing6{
+            color: #db1224;
+        }
+        .writing7{
+            color: darkgray;
+            text-decoration:line-through;
+        }
+
+
+        /*秒杀*/
+        .div12{
+            width: 374px;
+            height: 150px;
+
+            float: left;
+
+
+        }
+
+        .div13{
+
+            width: 33%;
+            height: 80%;
+            float: left;
+
+        }
+        .img3{
+            width: 100%;
+            height: 100%;
+        }
+        /*图片
+        */
+        #middle{
+
+            width: 374px;
+            height: 150px;
+
+            display: flex;
+        }
+
+        #middle .div14{
+
+            width: 50%;
+            height:150px;
+            float: left;
+
+
+
+        }
+        .div15{
+            width:25% ;
+            height: 100px;
+
+            float: left
+
+        }
+        #middle .img4{
+            width: 46%;
+            height: 50%;
+        }
+        .img5{
+            width: 60%;
+            height: 60%;
+        }
+
+        /*中部*/
+        #wrap{
+
+            width: 374px;
+            height: 700px;
+
+
+            margin: auto;
+            /*成为弹性盒子*/
+            display: flex;
+
+            /*弹性盒子*/
+            /*将空白间距进行分布*/
+            justify-content: space-between;
+            /*justify-content: space-around;*/
+            flex-wrap:wrap ;
+            align-content: space-between;
+        }
+        #wrap .writing8{
+            color: #db1224;
+            font-weight:bold;
+
+        }
+        #wrap .writing9{
+            border: #db1224 1px solid ;color: #db1224;
+
+        }
+        #wrap .writing10{
+            color: darkgray ;font-size: 12px
+
+        }
+        #wrap .writing11{
+
+            /*多了点点*/
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        #wrap .img6{
+            width: 167px;
+            height: 300px;
+        }
+
+        #wrap .div16{
+
+            width: 167px;
+            height: 20px;
+
+            /*多了点点*/
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
+
+        #nav{
+            width: 400px;
+
+            height: 54px;
+            background: white;
+
+            position: fixed;
+            bottom: 0;
+
+        }
+        #nav .nav1{
+            width: 95px;
+            height: 54px;
+
+            color: #8b8b8b;
+            float: left;
+            text-align: center;
+
+
+
+        }
+
+        /*底部 不受滚动条影响*/
+        </style>
+</head>
+<body>
+
+<div class="body">
+    <div id="header">
+        <div >     <span class="iconfont" style="font-size: 30px ; color: white">&#xe747;</span></div>
+        <div class="div1">
+            <div class="div2"> <span class="writing1" style="margin-left: 15px">JD</span>
+                <div  style="margin-top: 2px"> <span class="writing2"  >|</span>  </div></div>
+            <div class="div3" > <div ><span class="iconfont" style="font-size: 15px ;">&#xe8ba;</span> </div> </div>
+            <input class="input1">
+        </div>
+
+        <div style="margin-top: 6px;margin-left: 10px;color: white">
+            <a >登录</a></div>
+    </div>
+    <!--上部导航栏完成
+    div 4
+    writing2
+    input1
+
+
+    -->
+
+
+    <div id="imgs">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+
+    </div>
+
+
+
+    <!--图片层
+    div 4
+    writing2
+    input1
+    -->
+    <div id="classification">
+        <div class="div5">
+            <img class="img1" src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/timg.jpg">
+            <div class="writing3">京东超市</div>
+
+
+                </div>
+        <div class="div5">
+            <img class="img1" src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/2.png">
+            <div class="writing3">数码3c</div>
+
+            </div>
+
+
+    </div>
+
+
+
+
+</div>
+<!--分类
+div5
+img1
+writing3
+input1
+-->
+
+
+<div id="seckill">
+    <div class="div6">
+        <span class="writing4">京东秒杀</span>
+        <div class="div7" ><span class="writing5">18:00点场</span></div>
+
+        <div class="div8">01:00:00</div>
+        <div class="div9">更多秒杀
+            <span class="iconfont" style="font-size: 15px">&#xe665;</span></div>
+    </div>
+</div>
+<div class="div10">
+    <div  class="div11">
+
+        <img class="img2"  src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/2.jpg">
+        <br><br><span>男士手表 </span><br><span class="writing6">价格：100元</span><br>
+        <span class="writing7">150</span>
+
+       </div>
+    <div class="div11">
+        <img  class="img2"  src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/3.jpg">
+        <br><br><span>项链抢购</span><br><span class="writing6">价格：1288元</span><br>
+        <span class="writing7">150</span>
+    </div>
+
+    <div class="div11">
+        <img   class="img2" src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/4.jpg">
+        <br><br><span>手机抢购</span><br><span class="writing6">价格：3256元</span><br>
+        <span class="writing7">150</span>
+
+       </div>
+    <div class="div11">
+        <img   class="img2" src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/5.jpg">
+        <br><br><span>女士手表 </span><br><span class="writing6">价格：100元</span><br>
+        <span class="writing7">150</span>
+    </div>
+</div>
+
+<div id="middle"><img src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/6.jpg">
+    <div class="">
+        <h4 style="color: deepskyblue">水果汇聚</h4>
+        <span style="font-size: 15px; color: darkgray">vc满满</span><br>
+        <img  class="img4" src="//img13.360buyimg.com/n7/jfs/t1/127336/33/7836/132475/5f1a4ecfE5ba7e964/661309816ded52d5.jpg">
+        <img  class="img4" src="//img13.360buyimg.com/n7/jfs/t1/115857/30/5534/95381/5eb40ce8E89e2bf85/f203cb1b690e268c.jpg">
+    </div>
+
+    <div class="div14">
+        <h4 style="color: deepskyblue">吃货礼包</h4>
+        <span style="font-size: 15px; color: darkgray">唯美食不可辜负</span><br>
+        <img class="img4" src="//img14.360buyimg.com/n2/jfs/t1/118585/29/6232/113324/5eb916d3Eb85ff020/9221e387af1f28ef.jpg">
+        <img  class="img4"src="//img12.360buyimg.com/n2/jfs/t1/56843/32/6071/85461/5d3c1746E6687b238/2df13a2335312710.jpg">
+
+    </div>
+</div>
+
+<div class="div15">
+    <h4 style="">4k高清</h4>
+    <span style="font-size: 15px; color: darkgray ;">品质电视</span><br>
+    <img class="img5" src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/9.jpg">
+
+    </div>
+<div class="div15">
+    <h4 style="">深夜食堂</h4>
+    <span style="font-size: 15px; color: darkgray">深夜食堂</span><br>
+    <img class="img5" src="//img13.360buyimg.com/n2/jfs/t2200/179/2903860066/56222/7be48fc6/571cbe8dNc2be035b.jpg">
+</div>
+<div class="div15">
+    <h4 style="">萌宠安置</h4>
+    <span style="font-size: 15px; color: darkgray">携宠出门</span><br>
+    <img class="img5" src="../../Program Files/JetBrains/WebStorm 2018.2.3/firstdemo/imgs/10.jpg">
+
+    </div>
+<div class="div15">
+    <h4 style="">美食诱惑</h4>
+    <span style="font-size: 15px; color: darkgray">吃的过瘾</span><br>
+    <img class="img5" src="//img10.360buyimg.com/jdcms/s150x150_jfs/t1/15694/38/2510/334274/5c1db3d0E6e16b307/d7016e8ee2562ede.jpg!q80.webp">
+</div>
+<div id="wrap">
+    <div>
+
+        <div class="div16"> <span  class="writing11">徐福记 沙皇礼盒 沙琪玛礼盒整箱糕点心</span>  </div>
+
+
+        <span  class="writing8" >￥35.6</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+    <div>
+        <img  class="img6" src="//img11.360buyimg.com/jdcms/s150x150_jfs/t1/29119/3/5442/194944/5c3d9c17E38930d94/2a664c757d1c4af7.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">好丽友派</span>  </div>
+
+
+        <span  class="writing8" >￥24.6</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+    <div>
+        <img  class="img6" src="//img12.360buyimg.com/jdcms/s150x150_jfs/t1/7390/26/5930/243894/5bdfa1bbE36aac001/d31661c0b2896e0a.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">肉干肉脯 零食大礼包</span>  </div>
+
+
+        <span  class="writing8" >￥28.6</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+    <div>
+        <img  class="img6" src="//img11.360buyimg.com/jdcms/s130x130_jfs/t1/66788/10/13615/172407/5dae588fEbaeab190/fc694ba0608d7257.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">醇香茅台 贵宾酒</span>  </div>
+
+
+        <span  class="writing8" >￥1028</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+    <div>
+        <img  class="img6" src="//img10.360buyimg.com/jdcms/s130x130_jfs/t4096/158/1151316360/351027/2a5b8868/586b746aN24203ea2.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">新西兰原装进口儿童牛奶</span>  </div>
+
+
+        <span  class="writing8" >￥166</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+    <div>
+        <img  class="img6" src="//img11.360buyimg.com/jdcms/s130x130_jfs/t18409/13/1120965405/178911/d83e8501/5abd9998N2d31f6a2.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">燕塘 纯牛奶</span>  </div>
+
+
+        <span  class="writing8" >￥100</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+    <div>
+        <img  class="img6" src="//img12.360buyimg.com/jdcms/s130x130_jfs/t1/9028/2/10012/382056/5c1b362bE1ade87d7/4ac7b9555a7a2650.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">立顿 Lipton 奶茶LINE</span>  </div>
+
+
+        <span  class="writing8" >￥50</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+    <div>
+        <img  class="img6" src="//img14.360buyimg.com/jdcms/s130x130_jfs/t14164/365/337246966/83511/59ccf59/5a093f44Na7e80c05.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">植物猫砂 干净整洁</span>  </div>
+
+
+        <span  class="writing8" >￥32.5</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+    <div>
+        <img  class="img6" src=//img13.360buyimg.com/jdcms/s130x130_jfs/t1/63068/26/11506/273246/5d8d78daE97b451f6/d83e0861c88583c1.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">美赞臣 儿童配方奶粉</span>  </div>
+
+
+        <span  class="writing8" >￥368</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+    <div>
+        <img  class="img6" src="//img10.360buyimg.com/jdcms/s130x130_jfs/t1/68639/37/12785/174244/5da0027fE01c73a2c/c8ed3f38e3af22cb.jpg!q80.webp" >
+
+        <div class="div16"> <span  class="writing11">花王 纸尿裤 </span>  </div>
+
+
+        <span  class="writing8" >￥119</span>
+        <span  class="writing9" >满减</span>
+
+        <span class="writing10">看相似</span>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+<div id="nav">
+
+    <div class="nav1">
+        <span class="" style="font-size: 30px">&#xe8b9;
+         </span><br><span>首页</span>
+    </div>
+    <div class="nav1"> <span class="iconfont" style="font-size: 30px">&#xe6ef;
+         </span><br><span>分类</span></div>
+    <div class="nav1"> <span class="iconfont" style="font-size: 30px">&#xe887;
+         </span><br><span>购物车</span></div>
+    <div class="nav1"> <span class="iconfont" style="font-size: 30px">&#xe8c8;
+         </span><br><span>用户</span></div>
+
+
+</div>
+
+</div>
+</div>
+</body>
+<body>
+<a href=分类.html</a>
+    </head>
+<body>
+
+</body>
+</html>
