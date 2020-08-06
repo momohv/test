@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  href="shangpinxiangqing.html"  rel="stylesheet"  type="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        #wrap{
+            width: 374px;
+            height: 1500px;
+
+
+
+        }#header{
+
+             width: 374px;
+             height: 35px;
+             position: absolute;
+             top: 5px;
+             z-index: 1;
+
+         }
+        #header .div1{
+
+            width: 10%;
+            height: 100%;
+            border-radius: 50%  ;
+            border: #8b8b8b 1px solid;
+            text-align: center;
+            margin-top: 5px ;float: left;
+            background: #8b8b8b;
+            color: white;
+
+
+
+        }
+        #header .div2{
+
+            width: 10%;
+            height: 100%;
+            border-radius: 50%  ;
+            border: #8b8b8b 1px solid;
+            text-align: center;
+            margin-top: 5px;  ;
+            float: right;
+            background: #8b8b8b;
+            color: white;
+
+        }
+
+
+        #imgs{
+
+            width: 100%;
+            height:400px;
+
+            margin: auto;
+            position: relative;
+        }
+        #imgs .img{
+
+            width: 100%;
+            height: 100%;
+            background-image: url("imgs/jd/a640274c2606227d.jpg.webp");
+            background-size: 100% 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        /*图片*/
+        /*上部完成*/
+
+
+        .writing1{
+
+            overflow : hidden;/*必须结合的属性,当内容溢出元素框时发生的事情*/
+            text-overflow: ellipsis;/*可以用来多行文本的情况下，用省略号“…”隐藏超出范围的文本 。*/
+            display: -webkit-box;/*必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。*/
+            -webkit-line-clamp: 2;/*用来限制在一个块元素显示的文本的行数。*/
+            -webkit-box-orient: vertical;/
+
+        }
+        .div3{
+            width: 100%;
+            height: 2%;
+            display: flex;
+        }
+        .div4{
+            width: 20%;
+            height: 100%;
+
+            margin-left: 5px;
+            text-align: center;
+            color: #c82519;
+            border: #c82519 1px solid;
+            font-size: 15px;
+
+        }
+        #middle1{
+            width: 100%;
+            height: 3%;
+
+
+        }
+        .writing2{
+            font-weight: bold;
+            margin: 20px;
+
+
+        }
+        .div5{
+            width: 22px;
+            height: 15px;
+            border: 1px #c82519 solid;
+            font-size: 10px;
+            color: #c82519;
+            margin-left: 70px;
+            margin-top: 4px;
+
+
+
+
+        }
+        .div6{
+
+            /*多了点点*/
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 20px
+        }
+        #middle2{
+            width: 100%;
+            height: 250px;
+
+
+        }
+        .div8{
+
+            display: flex;
+        }
+        .div9{
+            width: 90px;
+            height: 45px;
+
+            text-align: center;
+            margin: 20px;
+
+        }
+        .writing3{
+
+            font-size: 12px;
+            color: #8b8b8b;
+
+        }
+        .div10{
+            width: 100px;
+            height: 40px;
+            border-radius: 25px;
+            border: #8b8b8b  1px solid;
+            margin-left: 15%;
+            text-align: center;
+        }
+        .img1{
+
+            width: 100%;
+        }
+        #nav{
+            width: 400px;
+
+            height: 54px;
+            background: white;
+
+            position: fixed;
+            bottom: 0;
+
+        }
+        #nav .nav1{
+            width: 40px;
+            height: 54px;
+
+            color: #8b8b8b;
+            float: left;
+            text-align: center;
+
+
+
+        }
+
+
+
+        .div11{
+            width:45%;
+            height: 40px;
+            border-radius: 25px;
+
+            margin-top: 4px;
+            text-align: center;
+            color: white;
+            background: #c82519
+
+        }
+
+        .div12{
+
+            width:45%;
+            height: 40px;
+            border-radius: 25px;
+
+            background: #ffbe0d;
+            margin-top: 4px;
+            text-align: center;
+            color: white;
+        }
+
+        .div11:hover  .wrap1{
+
+            display: none;
+
+        }
+
+
+        /*底部 不受滚动条影响*/
+
+        .wrap1{
+            width: 374px;
+            height:470px ;
+
+            background: white;
+            position: absolute;
+            left: 0;
+            top: -470px;
+            bottom: 0;
+
+            z-index: 7;
+
+
+        }
+        #wrap{
+            width: 374px;
+            height:470px ;
+
+
+        } *{
+              margin: 0;
+              padding: 0;
+          }
+
+
+        .div13{
+
+            width: 170px;
+            height: 100px;
+
+
+
+
+
+        }
+        .div14{
+
+            width: 374px;
+            height: 100px;
+
+            display: flex;
+        }
+        .div15{
+            width: 200px;
+            height: 130px;
+
+
+        }
+        .div17{
+
+            width: 70px;
+            height: 30px;
+            border-radius: 25px;
+            background: #f7f7f7;
+            float: left;
+            margin: 10px;
+
+            margin-left:25px ;
+            font-size:15px ;
+            text-align: center;
+            color: #8b8b8b;
+
+        }
+        .div18{
+            width:100%;
+            height: 40px;
+            border-radius: 25px;
+
+            margin-top: 80px;
+            text-align: center;
+            color: white;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+
+    <div id="header">
+        <div class="div1">
+            <div style="margin-top: 7px">
+                <span class="iconfont" style="font-size: 20px ;">&#xe685;</span></div>
+        </div>
+        <div class="div2"> <span>...</span></div></div>
+
+    <div id="imgs">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+    </div>
+
+    <!--上部完成
+
+    div2
+    -->
+    <div>
+        <div style="margin-top: 5px">
+            <span style="color: #c82519;font-size: 25px;">￥28.8</span>
+            <span class="iconfont" style="float: right;font-size: 15px;color: #666666;margin: 5px">&#xe8bb; <br><span style="font-size: 10px">收藏</span></span>
+            <span class="iconfont"  style="float: right;font-size: 15px;color: #666666;margin: 5px">&#xe8ab;<br>  <span style="font-size: 10px">分享</span></span>
+        </div><br>
+        <div style="margin-left: 10px;margin-right: 10px">
+
+            <h4 class="writing1">双汇  烤肠台湾风味烤香肠  家庭装 批发台湾风味烤香肠  烤肠台湾风味原味烤香肠  </h4>
+        </div>
+
+        <div style="margin: 10px">
+
+            <h5 class="writing1" style="color: #666666">双汇  烤肠台湾风味烤香肠  家庭装 批发台湾风味烤香肠  烤肠台湾风味原味烤香肠</h5>
+        </div>
+
+        <div class="div3">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div class="div4">秒杀预告</div><div><span style="color: #c82519;font-size: 15px">7月30日0：00开始秒杀，秒杀价20</span>
+        </div></div>
+
+    </div>
+
+
+    <!--文字完成
+    div4
+    writing1-->
+
+    <div id="middle1"><div style="float: left"><span class="writing2">优惠</span></div>
+
+        <div style="float: left "><span class="iconfont">&#xe60a;</span></span><span style=" color: #c82519;
+            font-size: 15px;">满200减20</span></div>
+        <div style="float: left"><span class="iconfont">&#xe60a;</span><span style=" color: #c82519;
+            font-size: 15px;">新用户专享</span></div>
+        <div style="float: right;font-size: 20px;">...</div></div>
+
+
+    <div style="display: flex;width: 374px; height: 50px">
+        <div class="div5">满减</div>
+        <div  class="div6" >满99减5
+            满168减8
+            满258减15
+
+
+        </div>
+
+    </div>
+    <div style="display: flex">
+        <div class="div5">限购</div>
+        <div  class="div6" >
+            购买1-5减时享受单价20，超出数原价
+
+        </div>
+    </div>
+
+
+    <div>
+        <div style="margin-bottom: 50px">
+            <div style="float: left"><span class="writing2">已选</span></div>
+            <span>1个</span>
+            <div style="float: right;font-size: 20px;">...</div></div>
+    </div>
+    <div>
+        <div style="float: left"><span class="writing2">送至</span></div>
+        <span>北京郑玄门附近</span>  <div style="float: right;font-size: 20px;">...</div></div>
+    <div style="margin-left:70px ;margin-bottom: 30px"><span style="color: #c82519">现货</span><span> 今天15：00前完成下单 预计7月30日18 ：00前发货  7月31日24:00前送达</span></div>
+
+
+
+    <div style=" ;margin-bottom: 30px">
+        <div style="float: left"><span class="writing2">运费</span></div>
+        <span>在线支付3元</span></div>
+    <div style=" ;margin-bottom: 30px"><span class="iconfont" style="color: #c82519;font-size: 15px">&#xe680;</span><span style="font-size: 15px;color: #8b8b8b">商家发货&售后</span>
+        <span class="iconfont" style="font-size: 15px;color: #8b8b8b" >&#xe67f;</span><span style="font-size: 15px;color: #8b8b8b">不支持7天无理由退款</span>
+        <span class="iconfont" style="color: #c82519;font-size: 15px">&#xe680;</span><span style="font-size: 15px;color: #8b8b8b">优鲜赔</span>
+        <div style="float: right;font-size: 20px;">...</div></div>
+    <div style="width: 100% ;height: 20px ;margin-bottom:70px">
+
+
+        <div style="float: left"><span class="writing2">问答</span></div>
+
+        <div style="color: #8b8b8b;font-size: 15px;float: right">查看全部问答<span class="iconfont">&#xe666;</span></div>
+
+        <br>
+        <div style="width: 100% ;height: 20px;margin-bottom: 1px;float: left">
+            <div style="width: 20px;height: 20px;background:#ff9600;margin-top: 20px;float: left">问</div>
+            <div style="float: left;font-size: 15px;margin-top: 20px">烤肠 会放坏吗？</div>
+            <div style="color: #8b8b8b;font-size: 15px;margin-top: 20px;float: right">共27个回答</div>
+
+
+        </div>
+
+
+    </div>
+    <!--文字完成
+        div6
+        writing2-->
+
+    <div id="middle2" >
+
+        <div class="div8">
+            <div>
+                <img  style="margin: 20px" src="//img14.360buyimg.com/n7/jfs/t1/121606/29/2715/174881/5ec8d109Ea2690842/0fe627f82057c117.jpg.webp" width="50px "height="50px">
+            </div>
+            <div style="margin-top: 20px">
+                <span style="font-size: 15px ">京东自营官方旗舰店</span><br>
+                <span>店铺星级</span>
+
+                <span class="iconfont" style="font-size: 10px">&#xe8bb;</span>
+                <span class="iconfont" style="font-size: 10px">&#xe8bb;</span>
+                <span class="iconfont" style="font-size: 10px">&#xe8bb;</span>
+                <span class="iconfont" style="font-size: 10px">&#xe8bb;</span>
+                <span class="iconfont" style="font-size: 10px">&#xe8bb;</span>
+
+            </div>
+
+
+
+
+        </div>
+        <div style="display: flex">
+            <div class="div9"><span>10万</span><br><span class="writing3">粉丝人数</span></div>
+
+            <div class="div9"><span>515</span><br><span class="writing3">全部商品</span></div>
+            <div class="div9"><span class="writing3">评价：<span style="color: chartreuse">8.41</span></span><br>
+                <span class="writing3">物流：<span style="color: chartreuse">8.41</span></span><br>
+                <span class="writing3">售后：<span style="color: chartreuse">8.41</span></span><br>
+
+            </div>
+        </div>
+
+
+
+        <div style="display: flex">
+            <div class="div10"><div style="margin-top: 7px"><span class="iconfont">&#xe8bb;</span><span>关注店铺</span></div></div>
+            <div class="div10"><div style="margin-top: 7px"><span class="iconfont">&#xe88d;</span><span>进入店铺</span></div></div>
+        </div>
+    </div>
+
+
+
+    <div>
+
+        <div><img class="img1" src="//img14.360buyimg.com/n7/jfs/t1/121606/29/2715/174881/5ec8d109Ea2690842/0fe627f82057c117.jpg.webp"></div>
+
+        <div><img class="img1" src="//img14.360buyimg.com/n7/jfs/t1/121606/29/2715/174881/5ec8d109Ea2690842/0fe627f82057c117.jpg.webp"></div>
+        <div><img class="img1" src="//img14.360buyimg.com/n7/jfs/t1/121606/29/2715/174881/5ec8d109Ea2690842/0fe627f82057c117.jpg.webp"></div>
+        <div><img class="img1" src="//img14.360buyimg.com/n7/jfs/t1/121606/29/2715/174881/5ec8d109Ea2690842/0fe627f82057c117.jpg.webp"></div>
+
+    </div>
+    <!--文字完成
+        div10
+       writing3
+        img1
+        -->
+
+
+    <div id="nav">
+
+        <div class="nav1">
+        <span class="iconfont" style="font-size: 25px">&#xe8ad;
+         </span><br><span style="font-size: 12px">客服</span>
+        </div>
+        <div class="nav1"> <span class="iconfont" style="font-size: 25px">&#xe88d;
+         </span><br><span style="font-size: 12px">店铺</span></div>
+        <a href="gouwuche.html"> <div class="nav1"> <span class="iconfont" style="font-size: 25px">&#xe887;
+         </span><br><span style="font-size: 12px">购物车</span></div></a>
+
+        <div style="display: flex">
+
+            <div class="div11" >  <div style="margin-top: 7px">加入购物车</div>
+                <div class="wrap1">
+
+
+                    <div >
+                        <div style="float: right;">
+                            <span class="iconfont" style="font-size: 25px;color: #8b8b8b">&#xe66f;</span>
+                        </div>
+                    </div>
+                    <div class="div14">
+                        <div  class="div13" ><span class="iconfont" style="margin: 10px;font-size:20px;color: #db1224; float: left">&#xe680;</span>
+
+                            <img  style="float: right" src="//img14.360buyimg.com/n7/jfs/t1/121606/29/2715/174881/5ec8d109Ea2690842/0fe627f82057c117.jpg.webp"width="100" height="100"> </div>
+
+                        <div class="div15">
+
+
+
+
+                            <div style="margin-top:50px;margin-left: 15px;color: #c82519;display: flex"><span >￥66.5</span>
+                            </div>
+                            <div style="font-size: 12px;color: #8b8b8b">已选<span style="color: black">20根*60g</span>，1个</div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="font-size: 15px;margin: 20px">规格</div>
+
+
+                        <div>
+
+
+                            <div class="div17">20根*60g</div>
+                            <div class="div17">30根*60g</div>
+                            <div class="div17">20根*100g</div>
+                            <div class="div17">50根*60g</div>
+                            <div class="div17">20根*90g</div>
+                            <div class="div17">50根*100g</div>
+
+                        </div>
+
+                    </div>
+                    <br><br><br><br><br><br><br>
+
+                    <div>
+
+                        <div style="float: left">数量</div>
+                        <div><div  style="float: right"> <div style="width: 30px ;height: 20px;background: #f7f7f7;float: right;text-align: center"><span >1</span></div><div style="float: right">+</div> </div></div>
+                    </div>
+                    <div style="display: flex;">
+                        <div class="div18"style="background: #c82519"><div style="margin-top: 7px;text-align: center"><span >去结算（1）</span></div></div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="div12"><div style="margin-top: 7px">立即购买</div></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
